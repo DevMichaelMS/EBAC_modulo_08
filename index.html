@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Média EBAC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contaier">
+        <header>
+            <img id="esq" src="images/logo.png" alt="capelo e diploma"><h1>Calculadora de Médias EBAC</h1><img id="dir" src="images/logo2.png" alt="capelo e diploma">
+        </header>
+        <form id="form-atividade"> 
+            <input type="text" name="nome" id="nome" class="nome" placeholder="Nome do Aluno" required>
+            <br>
+            <input type="text" id="nome-at" class="nome-at" placeholder="Nome da Atividade" required>
+            <input type="number" id="nota" class="nota" placeholder="Nota" min="0" max="10" required>
+            <button type="submit" id="add" class="add">Adicionar +</button>
+            <br>
+            <table id="tabela" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nome do Aluno</th>
+                        <th>Nome da Atividade</th>
+                        <th>Nota</th>
+                        <th>Aprovado?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot class="">
+                    <tr>
+                        <td class="md-final">Média Final</td>
+                        <td class="td">---</td>
+                        <td id="m-final" class="m-final">---</td>
+                        <td id="m-final-resultado">---</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <hr>
+            </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

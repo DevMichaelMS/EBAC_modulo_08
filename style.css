@@ -101,13 +101,13 @@ table td img {
 }
 
 .resultado {
-    padding: 8px;
+    padding: 6px;
     font-weight: bold;
     color: white;
     background-color: #000;
     border-radius: 3px;
     text-align: center;
-    margin-top: 10px;
+    display: inline-block;
 }
 
 .aprovado {
